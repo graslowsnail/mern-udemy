@@ -12,4 +12,8 @@ To deploy this project run
   npm run deploy
 ```
 
+## Authors
+
+- [@graslowsnail](https://www.github.com/graslowsnail)
+
 
