@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import Input from '../../shared/FormElements/Input';
 import Button from '../../shared/FormElements/Button';
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from '../../shared/util/validators';
+import './PlaceForm.css';
 
 const DUMMY_PLACES = [
     {
@@ -47,29 +48,32 @@ const UpdatePlace = () => {
     };
 
     return (
-        <form>
+        <form className='place-form'>
             <Input 
                 id='title'
                 element='input' 
                 type='text' 
-                lable='Title' 
+                label='Title' 
                 validators={[ VALIDATOR_REQUIRE() ]}
                 errorText= 'please enter a valid title.'
                 onInput ={() => {}}
                 value={identifiedPalce.title}
                 valid={true}
             />
+
             <Input 
                 id='description'
                 element='textarea' 
-                lable='Discription' 
+                label='Description' 
                 validators={[ VALIDATOR_MINLENGTH(5) ]}
                 errorText= 'please enter a valid description (min. 5 characters).'
                 onInput ={() => {}}
                 value={identifiedPalce.description}
                 valid={true}
             />
-            <Button type='submit' disabled={true} >UPDATE PLACE</Button>
+            <Button type='submit' disabled={true}>
+                UPDATE PLACE
+            </Button>
         </form>
     );
 };
