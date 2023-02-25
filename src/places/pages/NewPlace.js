@@ -28,7 +28,7 @@ const NewPlace = () => {
                 type='Description'
                 label='Title'
                 validators ={[ VALIDATOR_MINLENGTH(5) ]}    
-                errorText='please enter a valid description (atlease 5 characters long).'
+                errorText='please enter a valid description (at least 5 characters long).'
                 onInput={descriptionInputHandler}
             />
         </form>
