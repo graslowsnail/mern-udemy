@@ -1,6 +1,8 @@
 
 # A project to increase my knowlege on the MERN stack
 
+ON lesson: 72
+
 A MERN application made following a course on udemy, that will allow users to post places theyve gone to for others to see
 
 
